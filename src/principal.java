@@ -53,13 +53,14 @@ public class principal {
 
     private static int mode(int[] array)
     {
-        HashMap<> hm=new HashMap<>();
+        HashMap<Integer,Integer> hm=new HashMap<>();
         int max=1;
         int temp=0;
         for(int i=0;i<array.length;i++)
         {
             if(hm.get(array[i])!=null)
-            {int count=hm.get(array[i]);
+            {
+                int count=hm.get(array[i]);
                 count=count+1;
                 hm.put(array[i],count);
                 if(count>max)
